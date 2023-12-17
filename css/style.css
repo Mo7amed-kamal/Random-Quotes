@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.quote {
+    background-image: url(../images/three.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.quote h1 {
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+.quote h1::first-letter {
+    color: red;
+}
+.quote p {
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+
+}
+.quote .zer {
+    padding: 22px 61px;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    margin-top: 20px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.quote .zer:hover {
+    background-color: #fdb813;
+    color: black;
+}
+.quote #outPut {
+    width: 500px;
+    height: 200px;
+    background-color: red;
+    margin: 25px auto;
+    font-size: 25px;
+    /* color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+@media screen and (max-width:800px) {
+    .quote h1{
+        font-size: 40px;
+    }
+    .quote p {
+        font-size: 22px;
+    }
+    .quote .zer{
+        padding: 20px 40px;
+    }
+    .quote #outPut {
+        width: fit-content;
+        height: 200px;
+        font-size: 20px;
+    }
+}
